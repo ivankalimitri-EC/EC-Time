@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romantic Garden</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to top, #87CEEB, #e0ffe0);
+    }/* Garden ground */
+.ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  background: #6ab04c;
+}
+
+/* Flowers */
+.flower {
+  position: absolute;
+  font-size: 24px;
+}
+
+/* Emojis */
+.emoji {
+  position: absolute;
+  font-size: 60px;
+}
+
+.boy {
+  bottom: 40%;
+  left: -100px;
+  animation: moveBoy 8s linear infinite;
+}
+
+.love {
+  bottom: 42%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pulse 1s infinite;
+}
+
+.girl {
+  bottom: 40%;
+  right: 50px;
+}
+
+@keyframes moveBoy {
+  0% { left: -100px; }
+  100% { left: 50%; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: translateX(-50%) scale(1); }
+  50% { transform: translateX(-50%) scale(1.3); }
+}
+
+  </style>
+</head>
+<body>  <!-- Flowers -->  <div class="flower" style="bottom:10%; left:10%;">🌸</div>
+  <div class="flower" style="bottom:12%; left:30%;">🌼</div>
+  <div class="flower" style="bottom:8%; left:60%;">🌻</div>
+  <div class="flower" style="bottom:11%; left:80%;">🌷</div>  <!-- Emojis -->  <div class="emoji boy">👦</div>
+  <div class="emoji love">❤️</div>
+  <div class="emoji girl">👧</div>  <!-- Ground -->  <div class="ground"></div>  <!-- Add your image -->  <img src="Pingkeli.jpg" alt="Pingkeli" style="position:absolute; top:10px; right:10px; width:120px; border-radius:20px; box-shadow:0 4px 10px rgba(0,0,0,0.3);"></body>
+</html>
